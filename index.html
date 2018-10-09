@@ -9,29 +9,53 @@
     <meta name="author" content="AJ Designz" />
     
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+	  <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	
+	  <!--BootStrap CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	  <!--Custom Styles CSS -->
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <!--Jquery-->
     <link rel="stylesheet" href="css/jquery.timepicker.css">
+   <style>
+	 /* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: #DAA520;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
 
-    
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}  
+</style>
 
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+   
 	
-	  </style>
 	  
   </head>
   <body data-spy="scroll" data-target="#ftco-navbar" data-offset="200">
    
-    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar" style="background-color:#330545">
-		<!--<a href="www.rocksteadee.com" class="header-logo"><span class="logo-ccc"><img src="images/BSCard2w.png" alt="RockSteaDee"></span></a>-->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="background-color:#330545">
+		
 		
       <div class="container">
         <a class="navbar-brand" href="index.html"></a>
@@ -48,9 +72,29 @@
             <!--<li class="nav-item"><a href="#section-news" class="nav-link">News</a></li>-->
             <li class="nav-item"><a href="#section-gallery" class="nav-link"><span style="font-size:24px;"><strong>Gallery</strong></span></a></li>
             <li class="nav-item"><a href="#section-contact" class="nav-link"><span style="font-size:24px;"><strong>Contact</strong></span></a></li>
-          </ul>
-        </div>
-      </div>
+			</ul>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		    <!-- Right -->	
+        <ul class="navbar-nav nav-flex-row">
+          <li class="nav-item">
+            <a href="" class="nav-link px-2">
+              <span style="font-size:18px"><i class="fa fa-facebook"></i></span>
+            </a>
+          </li>
+			&nbsp;
+          <li class="nav-item">
+            <a href="mailto:chefdee@rocksteadee.com" class="nav-link px-2">
+				<span style="font-size:18px"><i class="fa fa-envelope"></i></span>
+            </a>
+          </li>
+			<li class="nav-item">
+			<p class="nav-link"><span style="font-size:18px"><i class="fa fa-phone">&nbsp;<strong>678.879.5385</strong></i></span></p>
+				</li>
+        </ul>
+
+      
+          </div>
+		</div>
 		
     </nav>
     <!-- END nav -->
@@ -65,7 +109,7 @@
           <div class="col-md-12">
             <h1 class="ftco-heading ftco-animate mb-3"><span style="color:#DAA520; text-shadow: 5px 5px 0 #3C0356; font-size:10vw;">RockSteaDee</span></h1>
             <h2 class="h5 ftco-subheading mb-5 ftco-animate"><strong><span style="color:#DAA520; text-shadow: 2px 2px 0 #3C0356; font-size:2vw; font-family:Impact;">Good for the Soul Food with a Caribbean Twist!</span></strong> </h2>    
-            <p><a href="" target="_blank" class="btn btn-outline-warning btn-sm ftco-animate" data-toggle="modal" data-target="#reservationModal"><strong><span style="font-size:2vw; color:#fff;">Event Quote</span></strong></a></p>
+            <p><a href="mailto:chefdee@rocksteadee.com" target="_blank" class="btn btn-outline-warning btn-sm ftco-animate" data-toggle="modal" data-target="#reservationModal"><strong><span style="font-size:2vw; color:#fff;">Event Quote</span></strong></a></p>
           </div>
         </div>
       </div>
@@ -114,9 +158,9 @@
                   <img src="images/catering.jpg" alt="Party/Events" class="img-fluid">
                   <div class="media-body p-md-5 p-4">
                     <h5 class="mt-0 h4">Party/Events Catering</h5>
-                    <p class="mb-4"></p>
+                    <p class="mb-4">Catering for all your special events with pricing to fit any budget. Weddings, Birthday, Corparate, Family Reunion events & more! </p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm"></a></p>
+					  <p class="mb-0"><a href="mailto:chefdee@rocksteadee.com" target="_blank" class="btn btn-dark btn-sm ftco-animate" data-toggle="modal" data-target="#reservationModal">Get a Quote</a></p>
                   </div>
                 </div>
               </div>
@@ -126,9 +170,9 @@
                   <img src="images/vendor.jpg" alt="Food Vendor Services" class="img-fluid">
                   <div class="media-body p-md-5 p-4">
                     <h5 class="mt-0 h4">Food Vendor Services</h5>
-                    <p class="mb-4"></p>
+                    <p class="mb-4">Looking for great food to offer at your fair, concert, carnival, or other outside event? RockSteaDee can provide several meal options.</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm"></a></p>
+                    <p class="mb-0"><a href="mailto:chefdee@rocksteade.com" class="btn btn-dark btn-sm">Contact Us</a></p>
                   </div>
                 </div>
               </div>
@@ -138,9 +182,9 @@
                   <img src="images/chef-hat.jpg" alt="Personal Chef" class="img-fluid">
                   <div class="media-body p-md-5 p-4">
                     <h5 class="mt-0 h4">Additional Services</h5>
-                    <p class="mb-4"></p>
+                    <p class="mb-4">Looking for additional services that have not been mentioned just drop us a line. We aim to provide excellent customer service!</p>
 
-                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm"></a></p>
+                    <p class="mb-0"><a href="mailto:chefdee@rocksteade.com" class="btn btn-dark btn-sm">Contact Us</a></p>
                   </div>
                 </div>
               </div>
@@ -164,23 +208,20 @@
               </div>
             </div>
           </div>
-          
 	
           <div class="col-md-4 ftco-animate">
-            <a href="images/menu_1.jpg" class="ftco-thumbnail image-popup">
               <img src="images/menu_1.jpg" alt="Steak" class="img-fluid">
-            </a>
-          </div>
+			  <div class="overlay">Herb Butter Pan Seared Steak w/ Garlic Roasted Potatos & Broccolli</div>
+			</div>
+		
           <div class="col-md-4 ftco-animate">
-            <a href="images/jerkchic.jpg" class="ftco-thumbnail image-popup ">
               <img src="images/jerkchic.jpg" alt="Jerk Chicken" class="img-fluid">
-				
-            </a>
+			  <div class="overlay">Jerk Chicken w/ Yellow Rice & Steamed Mixed Vegetables</div>
           </div>
+			
           <div class="col-md-4 ftco-animate">
-            <a href="" class="ftco-thumbnail image-popup">
-              <img src="images/shrimpgrits.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
-            </a>
+              <img src="images/shrimp.jpg" alt="Shrimp & Grits" class="img-fluid">
+            <div class="overlay">Shrimp & Grits</div>
           </div>
 
           <div class="col-md-4 ftco-animate">
@@ -198,6 +239,22 @@
               <img src="images/sweetsourchic.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
             </a>
           </div>
+			<div class="col-md-4 ftco-animate">
+            <a href="images/menu_1.jpg" class="ftco-thumbnail image-popup">
+              <img src="images/fruitplat1.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+            </a>
+          </div>
+			<div class="col-md-4 ftco-animate">
+            <a href="images/menu_1.jpg" class="ftco-thumbnail image-popup">
+              <img src="images/vegplat.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+				
+            </a>
+          </div>
+			<div class="col-md-4 ftco-animate">
+            <a href="images/menu_1.jpg" class="ftco-thumbnail image-popup">
+              <img src="images/sliders.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+            </a>
+          </div>
 
         </div>
       </div>
@@ -208,16 +265,16 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-md-12 text-center mb-5 ftco-animate">
+          <div class="col-md-10 text-center mb-5 ftco-animate">
             <h2 class="display-4">Contact Us</h2>
             <div class="row justify-content-center">
-              <div class="col-md-7">
+              <div class="col-md-5">
                 <p class="lead"></p>
               </div>
             </div>
           </div>
 
-          <div class="col-md mb-5 ftco-animate">
+          <div class="col-md mb-3 ftco-animate">
             <form action="" method="post">
               <div class="form-group">
                 <label for="name" class="sr-only">Name</label>
